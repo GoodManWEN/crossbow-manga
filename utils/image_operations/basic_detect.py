@@ -33,6 +33,10 @@ def magic_wand(rgb: 'np.array', pos_x: int, pos_y: int):
     for val in rand_color.tolist():
         histogram[val] += 1
     majority = histogram.index(max(histogram))
+    r'''
+    utils\image_operations\basic_detect.py:36: RuntimeWarning: invalid value encountered in sqrt
+    rand_distance = np.sqrt(np.sum(np.power(rand_pos_orn, 2), axis=1)).reshape((-1, 1))
+    '''
     rand_distance = np.sqrt(np.sum(np.power(rand_pos_orn, 2), axis=1)).reshape((-1, 1))
     rand_combat = np.hstack([rand_pos, rand_distance, rand_color.reshape((-1, 1))])
     rand_combat = rand_combat[rand_combat[:, 2].argsort()].astype(np.int16)
