@@ -1,0 +1,1 @@
+from .manga_ocr_ import OCRProxy

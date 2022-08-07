@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components {
+	.my-button {
+		@apply bg-violet-500 mx-1 mt-3 text-white py-2 px-5 rounded-full hover:bg-violet-600 active:bg-violet-700 focus:bg-violet-600 focus:outline-none focus:ring-violet-300;
+	}
+} */
+
+/** Global base style **/
+@layer base {
+	* {
+		word-break: break-word !important;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	button {
+		text-transform: capitalize;
+		letter-spacing: 1px;
+	}
+	button,
+	[type="button"],
+	[type="reset"],
+	[type="submit"] {
+		background-color: var(--el-button-bg-color);
+	}
+}

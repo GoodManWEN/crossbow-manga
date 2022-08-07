@@ -1,0 +1,46 @@
+//define color
+$primary: #192a56;
+$primaryShade: #8aa4ff;
+$primaryContrast: #ffffff;
+$secondary: #142245;
+$dark: #000000;
+
+//define size
+$sideMenuWidth: 220px;
+
+/** Global custom with scss **/
+/** table **/
+.table-header {
+	background-color: #f3f4f6 !important;
+	font-weight: 600;
+	color: $dark;
+	border-color: #00000010 !important;
+}
+.table-fixed-icon {
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 18px;
+	.el-icon {
+		cursor: pointer;
+	}
+}
+/** Element plus override with scss **/
+/** el-table **/
+.el-table .cell {
+	white-space: pre !important;
+}
+
+/** el-dialog **/
+.el-dialog__body {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.el-table .el-table__cell {
+	padding: 6px 0;
+	letter-spacing: 0.5px;
+	font-size: 13px;
+}
+.el-input.is-disabled .el-input__inner {
+	color: #999999;
+}
+//https://github.com/vitejs/vite/issues/1279
