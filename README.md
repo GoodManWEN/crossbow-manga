@@ -6,6 +6,7 @@
 - 一键嵌字。
 
 ## 预览
+![](https://github.com/GoodManWEN/crossbow-manga/raw/main/misc/preview1.gif)
 
 ## 安装
 
